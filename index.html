@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template Bootstrap</title>
+
+    <!-- Importação do Bootstrap Local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS Personalizado -->
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Meu Portfólio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#apresentacao">Sobre Mim</a></li>
+              <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main style="margin-top: 80px;"> 
+      
+      <section id="apresentacao" class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+              <span class="badge bg-primary mb-2">Olá, mundo! 👋</span>
+              <h1 class="display-4 fw-bold">Eu sou o Wesley</h1>
+              <h2 class="h4 text-muted mb-4">Estudante de Análise e Desenvolvimento de Sistemas</h2>
+              <p class="lead">
+                Apaixonado por tecnologia, com foco principal em análise de dados e desenvolvimento front-end. Meu objetivo é unir a estruturação robusta de bancos de dados com a criação de interfaces responsivas e intuitivas, construindo pontes eficientes entre a informação e o usuário final.
+              </p>
+              <a href="#projetos" class="btn btn-primary btn-lg mt-3">Ver meus projetos</a>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <img src="https://via.placeholder.com/400x400" alt="Foto do Wesley" class="img-fluid rounded-circle shadow">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="py-5 bg-light">
+        <div class="container">
+          
+          <div class="row mb-5 text-center">
+            <div class="col-12">
+              <h2 class="display-5 fw-bold text-dark">Minhas Habilidades</h2>
+              <p class="text-muted">As ferramentas e tecnologias que utilizo no meu dia a dia.</p>
+            </div>
+          </div>
+
+          <div class="row g-4 text-center">
+            
+            <div class="col-6 col-md-3">
+              <div class="card h-100 p-4 border-0 shadow-sm">
+                <h1 class="display-4 text-primary">💻</h1>
+                <h4 class="mt-3">Front-end</h4>
+                <p class="text-muted small">HTML5, CSS3, JavaScript e Bootstrap.</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="card h-100 p-4 border-0 shadow-sm">
+                <h1 class="display-4 text-success">🗄️</h1>
+                <h4 class="mt-3">Data/DB</h4>
+                <p class="text-muted small">PostgreSQL, modelagem e análise de dados.</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="card h-100 p-4 border-0 shadow-sm">
+                <h1 class="display-4 text-danger">⚙️</h1>
+                <h4 class="mt-3">Back-end</h4>
+                <p class="text-muted small">Python, Django e estruturação de APIs.</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="card h-100 p-4 border-0 shadow-sm">
+                <h1 class="display-4 text-warning">🎨</h1>
+                <h4 class="mt-3">UI/UX</h4>
+                <p class="text-muted small">Heurísticas de usabilidade e design responsivo.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      </main>
+
+
+    <!-- Importação do JavaScript do Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
