@@ -103,10 +103,123 @@
         </div>
       </section>
 
+      <!-- Carousel -->
+      <section id="projetos" class="py-5">
+        <div class="container">
+          <h2 class="display-5 fw-bold text-center mb-5">Meus Projetos</h2>
+
+          <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+
+              <div class="carousel-item active">
+                <div class="bg-dark text-light p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 300px;">
+                  <h3 class="mb-3">👟 Sneaker Review Hub</h3>
+                  <p class="lead">Plataforma full-stack para avaliação de tênis.</p>
+                  <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Ver Detalhes</button>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="bg-secondary text-light p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 300px;">
+                  <h3 class="mb-3">📱 Análise de UI/UX</h3>
+                  <p class="lead">Estudo de usabilidade em interfaces mobile.</p>
+                  <button type="button" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Ver Detalhes</button>
+                </div>
+              </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section id="contato" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="display-5 fw-bold text-center mb-5">Entre em Contato</h2>
+          
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              
+              <form id="formContato" class="p-4 bg-white rounded shadow-sm border">
+                
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label fw-bold">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 fw-bold">Enviar Mensagem</button>
+              
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       </main>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Sneaker Review Hub</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Tecnologias:</strong> Python, Django, PostgreSQL, HTML e CSS.</p>
+            <p>Desenvolvimento em grupo de uma aplicação web completa. Fui responsável por estruturar os modelos de dados, implementar Class-Based Views (CBVs), criar o sistema de autenticação e realizar a integração com o banco PostgreSQL.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Análise de Interfaces UI/UX</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Foco:</strong> Usabilidade e Experiência do Usuário.</p>
+            <p>Projeto acadêmico focado na análise de aplicativos, identificação de problemas de usabilidade e proposta de melhorias práticas baseadas nas heurísticas de Nielsen (como controle do usuário e feedback do sistema).</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Importação do JavaScript do Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
