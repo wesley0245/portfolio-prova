@@ -12,6 +12,7 @@
   </head>
   <body>
 
+    <!-- Cabeçalho -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -23,6 +24,9 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link" href="#apresentacao">Sobre Mim</a></li>
               <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="#educacao">Trajetória</a></li>
+
               <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
               <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
@@ -33,6 +37,7 @@
 
     <main style="margin-top: 80px;"> 
       
+      <!-- Apresentacao -->
       <section id="apresentacao" class="py-5">
         <div class="container">
           <div class="row align-items-center">
@@ -48,16 +53,20 @@
             </div>
 
             <div class="col-md-6 text-center">
-              <img src="https://via.placeholder.com/400x400" alt="Foto do Wesley" class="img-fluid rounded-circle shadow">
+              <img src="img/perfil_01.png" alt="Foto do Wesley" class="img-fluid rounded-circle shadow">
             </div>
 
           </div>
         </div>
       </section>
 
+      <!-- Habilidades -->
       <section id="habilidades" class="py-5 bg-light">
         <div class="container">
           
+
+          <!-- Ferramentas e tecnologias -->
+
           <div class="row mb-5 text-center">
             <div class="col-12">
               <h2 class="display-5 fw-bold text-dark">Minhas Habilidades</h2>
@@ -100,6 +109,64 @@
             </div>
 
           </div>
+
+          <!-- Soft Skills -->
+          <div class="row mt-5 text-center justify-content-center">
+            <div class="col-12 mb-4">
+              <h4 class="fw-bold text-dark">Soft Skills</h4>
+            </div>
+            
+            <div class="col-md-3 mb-3">
+              <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-info">
+                <h5 class="fw-bold mb-1">Empatia & Adaptabilidade</h5>
+                <small class="text-muted">Facilidade para entender as necessidades do usuário e se adaptar a novos cenários.</small>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-info">
+                <h5 class="fw-bold mb-1">Comunicação Clara</h5>
+                <small class="text-muted">Capacidade de traduzir requisitos técnicos para uma linguagem acessível.</small>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-info">
+                <h5 class="fw-bold mb-1">Resolução de Problemas</h5>
+                <small class="text-muted">Foco em encontrar soluções lógicas e eficientes para desafios complexos.</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Educacao -->
+      <section id="educacao" class="py-5">
+        <div class="container">
+          <h2 class="display-5 fw-bold text-center mb-5">Minha Trajetória</h2>
+          
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="d-flex mb-4">
+                <div class="flex-shrink-0 text-primary fs-2 me-3">🎓</div>
+                <div>
+                  <h4 class="fw-bold mb-1">Análise e Desenvolvimento de Sistemas</h4>
+                  <h6 class="text-muted">Em andamento (Previsão: 2026)</h6>
+                  <p>Foco prático em estruturação de software, banco de dados (PostgreSQL), redes e desenvolvimento web (Front e Back-end).</p>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+                <div class="flex-shrink-0 text-success fs-2 me-3">💼</div>
+                <div>
+                  <h4 class="fw-bold mb-1">Busca por Estágio</h4>
+                  <h6 class="text-muted">Foco em Análise de Dados / Desenvolvimento</h6>
+                  <p>Atualmente buscando minha primeira oportunidade formal na área de TI, com grande interesse no setor financeiro e bancário para aplicar conhecimentos práticos em manipulação de dados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -127,6 +194,22 @@
                 </div>
               </div>
 
+              <div class="carousel-item">
+                <div class="bg-success text-light p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 300px;">
+                  <h3 class="mb-3">🗄️ Modelagem de Banco de Dados</h3>
+                  <p class="lead">Criação e manipulação avançada de tabelas com PostgreSQL.</p>
+                  <button type="button" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#modalProjeto3">Ver Detalhes</button>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="bg-info text-dark p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 300px;">
+                  <h3 class="mb-3">💻 Interfaces Responsivas</h3>
+                  <p class="lead">Desenvolvimento de layouts fluidos e modernos com frameworks CSS.</p>
+                  <button type="button" class="btn btn-dark mt-3" data-bs-toggle="modal" data-bs-target="#modalProjeto4">Ver Detalhes</button>
+                </div>
+              </div>
+
             </div>
             
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
@@ -142,7 +225,7 @@
         </div>
       </section>
 
-
+      <!-- Contato -->
       <section id="contato" class="py-5 bg-light">
         <div class="container">
           <h2 class="display-5 fw-bold text-center mb-5">Entre em Contato</h2>
@@ -213,6 +296,38 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Gestão com PostgreSQL</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Foco:</strong> Estruturação de dados e Queries.</p>
+            <p>Projeto acadêmico envolvendo a criação de tabelas relacionais, inserção de registros em massa e desenvolvimento de consultas (queries) complexas para extração de relatórios usando PostgreSQL.</p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Desenvolvimento Front-end</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Foco:</strong> HTML, CSS, Responsividade e Componentização.</p>
+            <p>Criação de interfaces de usuário garantindo acessibilidade e usabilidade em diferentes dispositivos (mobile-first). Utilização intensiva de sistemas de grid e bibliotecas de componentes visuais para estruturação de layouts modernos e interativos.</p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
         </div>
       </div>
     </div>

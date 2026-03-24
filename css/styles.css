@@ -1,0 +1,79 @@
+/* =========================================
+   ESTILOS PREMIUM - PORTFÓLIO WESLEY
+   ========================================= */
+
+/* Importando a fonte do Google Fonts para um visual mais limpo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+html {
+  /* Faz a tela rolar suavemente quando clica no menu */
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fcfcfc;
+}
+
+/* --- Ajustes da Navbar --- */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important; /* Azul do Bootstrap ao passar o mouse */
+}
+
+/* --- Seção de Apresentação com Gradiente --- */
+#apresentacao {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid #dee2e6;
+}
+
+#apresentacao img {
+  border: 5px solid white;
+  transition: transform 0.5s ease;
+}
+
+#apresentacao img:hover {
+  transform: scale(1.05) rotate(2deg); /* Efeito sutil na sua foto */
+}
+
+/* --- Efeitos nos Cards de Habilidades --- */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Card "pula" para cima */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* --- Ajuste dos Botões --- */
+.btn {
+  border-radius: 8px; /* Botões mais arredondados e modernos */
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --- Inputs do Formulário --- */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  border-color: #86b7fe;
+}
